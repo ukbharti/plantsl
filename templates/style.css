@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('4289830.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body>h1{
+    color: #fab81d;
+    /* background-color: aqua; */
+    padding: 3vw;
+    font-size: 3.5vw;
+}
+.mainCon{
+    /* background-color: aquamarine; */
+    width: 50%;
+}
+.mainCon>h2{
+    color: #797979;
+    padding: 2vw;
+    text-align: center;
+    font-size: 2vw;
+}
+form{
+    display: flex ;
+    flex-direction: column;
+}
+form>div{
+    display: flex;
+    justify-content: space-between;
+    /* background-color:aquamarine; */
+    margin: 1vw 0 1vw 0;
+}
+form>div>label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #797979;
+    font-size: 1.5vw;
+    /* font-weight: 500; */
+}
+form>div>label,form>div>input{
+    width: 50%;
+}
+form>button{
+    margin-top: 0.9vw;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    background-color: #2596be;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form>button:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+#firstInput{
+    background-color: rgb(247, 247, 247);
+    border-radius: 0.3vw;
+    border: 2px solid #2596be;
+}
+p{
+    margin-top: 2VW;
+    font-size: 1.5VW;
+    background-color: white;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.6vw;
+}

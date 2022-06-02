@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants Leaf Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Plants Leaf Disease Detection</h1>
+    <div class="mainCon">
+        <h2>Fill Up These Details And Upload the Image</h2>
+        <form action="/submit" method="post">
+            <div>
+                <label for="plantName">Plant Name</label>
+                <input type="text" id="firstInput" name="plantName">
+            </div>
+            <div>
+                <label for="fileName">Upload a Image</label>
+                <input type="file" name="fileName">
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+    <P>
+        {% if prediction %}
+        <img src="{{path}}" height="400px" width ="400px">
+        <h2> Plant belongs to : <i> {{prediction}} </i> </h2>
+        {% endif %}
+             
+    
+    </P>
+</body>
+
+</html>
