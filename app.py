@@ -21,7 +21,7 @@ def predict(path):
 
   return ref[pred]
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def home():
   return render_template("index.html")
 @app.route("/submit", methods=['GET', 'POST'])
